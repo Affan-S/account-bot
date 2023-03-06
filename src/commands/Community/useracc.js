@@ -2,6 +2,7 @@ const { SlashCommandBuilder, EmbedBuilder } = require('@discordjs/builders');
 const { MessageEmbed } = require('discord.js');
 require('dotenv');
 const DiscordUser = require("../../models/DiscordUser");
+const fetch = require('node-fetch');
 
 module.exports = {
   data: new SlashCommandBuilder()

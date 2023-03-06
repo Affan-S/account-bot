@@ -2,6 +2,7 @@ const { SlashCommandBuilder } = require('@discordjs/builders')
 const User = require("../../models/User");
 const DiscordUser = require("../../models/DiscordUser");
 const Logs = require("../../models/Logs");
+const fetch = require('node-fetch');
 
 module.exports = {
     data: new SlashCommandBuilder()

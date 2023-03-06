@@ -3,6 +3,7 @@ const { MessageEmbed } = require('discord.js');
 require('dotenv');
 const DiscordUser = require("../../models/DiscordUser");
 const CoolDown = require("../../models/CoolDown");
+const fetch = require('node-fetch');
 
 module.exports = {
   data: new SlashCommandBuilder()

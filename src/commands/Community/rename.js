@@ -1,5 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders')
 const { MessageEmbed } = require('discord.js');
+const fetch = require('node-fetch');
 
 const User = require("../../models/User");
 const DiscordUser = require("../../models/DiscordUser");

@@ -5,9 +5,9 @@ const User = require("../../models/User");
 const DiscordUser = require("../../models/DiscordUser");
 const Logs = require("../../models/Logs");
 const Cooldown = require("../../models/CoolDown");
-
 const passwordGenerator = require('generate-password');
 const CoolDown = require('../../models/CoolDown');
+const fetch = require('node-fetch');
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -174,7 +174,10 @@ module.exports = {
 
     if(userLicense.status == 200){
       await interaction.editReply({content: "License assigned", ephemeral:true});
+    }else{
+      await interaction.editReply({content: "Licenses assignmend failed! No assignments available, Purchase more assignment to assign the license!",ephemeral: true});
     }
+
     // update current DISCORD USER's accounts list
     try{
 

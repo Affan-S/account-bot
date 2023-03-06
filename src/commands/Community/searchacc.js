@@ -1,5 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 require('dotenv');
+const fetch = require('node-fetch');
 
 const DiscordUser = require("../../models/DiscordUser");
 
