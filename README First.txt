@@ -1,0 +1,20 @@
+create a .env file in the root directory
+
+paste:
+
+
+
+token="MTA3OTk5NjM5NTIzNjM4MDY5NA.GDzidk.d73MIK3W1JE-TMTdkxN0PaVu71ebehVevxdu5I"
+CLIENT_ID=de0c1480-31b3-45df-b1b8-4ccb0a94ca3f
+CLIENT_SECRET=dXd8Q~v0kLaG~3PmqW7AUW3dEu1XsNDBVvUUkb~K
+TENANT_ID=a7b365ba-93ea-42f5-abb6-ff8de984467f
+GROUP_ID=4d3cccbf-0d7f-454c-b35c-8fd37f69b4b2
+OWNER_ID=87f4cd69-c4d7-449b-aead-074269e82c7c
+MONGO_URI=mongodb://127.0.0.1:27017/artis
+LOG_CHANNEL=1080924545638215690
+GUILD_ID=1079973338421674054
+LICENSE_SKUID=87cd17ac-7b0e-4041-93a6-48ac0799f295
+
+
+
+(change them accordingly)
