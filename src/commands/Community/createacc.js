@@ -176,6 +176,18 @@ module.exports = {
       await interaction.editReply({content: "License assigned", ephemeral:true});
     }else{
       await interaction.editReply({content: "Licenses assignmend failed! No assignments available, Purchase more assignment to assign the license!",ephemeral: true});
+      
+      // Log the data - Create account, discord ID (not name, name can change)
+      const log = new Logs(
+      {
+        command: "createacc",
+        description : `${username} wasn't assigned a License. No assignments available`,
+        discordId : `${userInteraction.id}`
+      });
+      
+      await log.save();
+      await client.channels.cache.get(`${process.env.LOG_CHANNEL}`).send(`${username} wasn't assigned a License. No assignments available;`);
+
     }
 
     // update current DISCORD USER's accounts list

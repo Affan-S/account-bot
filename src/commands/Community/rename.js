@@ -106,8 +106,8 @@ module.exports = {
                 .setTitle('Hey! A new account was just created!')
                 .addFields(
                     { name : "Account Inforamtion", value:" "},
-                    { name: 'Username', value: userJson.userPrincipalName },
-                    { name: 'Password', value: password }
+                    { name: 'Username', value: userFound.email },
+                    { name: 'Password', value: userFound.password }
             );
 
             await userInteraction.send(
